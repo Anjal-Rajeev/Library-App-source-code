@@ -1,0 +1,82 @@
+.body{
+    background-color: grey;
+    height: 100vh;
+    overflow: auto;
+        
+}
+.example-card {
+    /* max-width: 300px; */
+    background-color: dimgray;
+    border: 1px solid black;
+    border-radius: 15px;
+    height: 25rem;
+    /* width: auto; */
+    margin-bottom: 20px;
+    /* positionolute; */
+    z-index: 1;
+  }
+
+
+.blank{
+    margin-bottom: 100px;
+}  
+
+mat-card-title{
+    font-size: larger;
+    font-weight: bolder;
+    color:#D8D9CF;
+    /* text-decoration:underline; */
+    
+}
+mat-card-subtitle{
+    /* font-style: italic; */
+    color: black;
+    font-size: smaller;
+}
+mat-card-actions{
+    position: absolute;
+    bottom: 20px;
+}
+.content p{
+    /* border: 1px solid yellow; */
+    overflow-y:scroll; 
+    height: 260px;
+    font-style: italic;
+    color: #100F0F; 
+    word-wrap: break-word;
+
+    
+}
+.content p::-webkit-scrollbar {
+    width: 10px;
+    background-color: dimgray;
+  }
+  ::-webkit-scrollbar-corner{
+    background-color: dimgray;
+
+  }
+
+
+ .btn-edit{
+    background-color: #4D77FF;
+ }
+ .btn-edit:hover{
+    background-color: #0000FF;
+    color: whitesmoke;
+ }
+
+ .btn-delete{
+    background-color: #F96666;
+ }
+
+ .btn-delete:hover{
+    background-color: #CF0A0A;
+    color:whitesmoke;
+ }
+
+ @media (max-width: 858px){
+    button{
+        height: 40px;
+        padding: 7px;
+    }
+ }

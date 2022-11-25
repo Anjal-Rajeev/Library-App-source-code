@@ -1,0 +1,30 @@
+.body{
+    background-color: #191919;
+}
+.form{
+    border: 1px solid gainsboro;
+    color: wheat;
+    margin-top: 10%;
+    padding: 25px;
+    
+}
+
+.container{
+    border: 1px solid #191919;
+    
+}
+
+/* .row{
+    border: 1px solid green;
+    
+
+} */
+.form-control{
+    background-color:#191919 ;
+    color: lightblue;
+    font-weight: lighter;
+}
+
+button:hover{
+    background-color: #379237;
+}

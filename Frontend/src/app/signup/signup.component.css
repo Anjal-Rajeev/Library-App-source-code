@@ -1,0 +1,13 @@
+.gradient-custom {
+
+    background: linear-gradient(to right, rgb(161, 90, 238), rgb(123, 162, 235))
+    }
+
+small,span{
+    color: #CF0A0A;
+    font-size: smaller;
+}
+
+input{
+    font-weight: lighter;
+}

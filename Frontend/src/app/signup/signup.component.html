@@ -1,0 +1,49 @@
+<section class=" gradient-custom">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="card bg-dark text-white" style="border-radius: 1rem;">
+            <div class="card-body p-5 text-center">
+  
+              <div class="mb-md-5 mt-md-4 pb-5">
+  
+                <h2 class="fw-bold mb-2 text-uppercase">sign up</h2>
+                <p class="text-white-50 mb-5">Please enter required details</p>
+
+                <form [formGroup]="data" (ngSubmit)="signupfunction(data)">
+
+                <div class="form-outline form-white mb-4 text-start">
+                    <label class="form-label" for="typeEmailX">Name</label>
+                  <input type="text"class="form-control form-control-lg bg-dark text-white" formControlName="name" />
+                  <!-- <small *ngIf="data.get('name').touched">Name required</small> -->
+                </div>
+
+                <div class="form-outline form-white mb-4 text-start">
+                    <label class="form-label" for="typeEmailX">Email</label>
+                  <input type="text" class="form-control form-control-lg bg-dark text-white" formControlName=email/>
+                  <!-- <span *ngIf="data.get('email').touched">Email required</span> -->
+                  <small *ngIf="data.get('email').touched && data.get('email').errors">Enter valid email</small>
+                </div>
+  
+                <div class="form-outline form-white mb-4 text-start">
+                    <label class="form-label" for="typePasswordX">Password</label>
+                  <input type="password" class="form-control form-control-lg bg-dark text-white" formControlName=password/>
+                  <small *ngIf="data.get('password').touched && data.get('password').errors">Password required(minimum 6 characters)</small><br>
+                  <span>{{msg}}</span>
+                </div>
+                <button class="btn btn-outline-light btn-lg px-5 mt-5" type="submit"  >SignUp</button>
+  
+              </form>
+              </div>
+  
+              <div>
+                <p class="mb-0">Already have an account? <a routerLink='/login' class="text-white-50 fw-bold text-decoration-none">Login</a>
+                </p>
+              </div>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
