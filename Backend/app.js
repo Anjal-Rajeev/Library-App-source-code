@@ -19,7 +19,7 @@ const port = process.env.PORT || 2003;
 // -----------------------------API CALLS--------------------------
 // ----------------------------------------------------------------
 
-// get all books
+// get all books from db
 app.get('/api/book', async(req, res)=>{
     try {
         
